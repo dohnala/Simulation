@@ -1,37 +1,87 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Sprites/obstacle.png" type="Texture" id=1]
-
-[sub_resource type="RectangleShape2D" id=1]
-
-custom_solver_bias = 0.0
-extents = Vector2( 32, 32 )
+[ext_resource path="res://Sprites/pine_tree_summer.png" type="Texture" id=1]
 
 [node name="Tiles" type="Node"]
 
-[node name="Obstacle" type="Sprite" parent="." index="0"]
+[node name="TreeTopLeft" type="Sprite" parent="." index="0"]
 
 texture = ExtResource( 1 )
 centered = false
-_sections_unfolded = [ "Offset" ]
-__meta__ = {
-"_edit_lock_": true
-}
+region_enabled = true
+region_rect = Rect2( 32, 0, 32, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Obstacle" index="0"]
+[node name="TreeTopMiddle" type="Sprite" parent="." index="1"]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+position = Vector2( 64, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 0, 32, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle/StaticBody2D" index="0"]
+[node name="TreeTopRight" type="Sprite" parent="." index="2"]
 
-position = Vector2( 32, 32 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
+position = Vector2( 128, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 0, 32, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="TreeMiddleLeft" type="Sprite" parent="." index="3"]
+
+position = Vector2( 0, 64 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 32, 32, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="TreeMiddle" type="Sprite" parent="." index="4"]
+
+position = Vector2( 64, 64 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 32, 32, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="TreeMiddleRight" type="Sprite" parent="." index="5"]
+
+position = Vector2( 128, 64 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 32, 32, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="TreeBottomLeft" type="Sprite" parent="." index="6"]
+
+position = Vector2( 0, 128 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 64, 32, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="TreeBottomMiddle" type="Sprite" parent="." index="7"]
+
+position = Vector2( 64, 128 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 64, 32, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="TreeBottoRight" type="Sprite" parent="." index="8"]
+
+position = Vector2( 128, 128 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 64, 32, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
 

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/obstacle.png-76ac2e54e260872af22c3d1fb36fd612.stex"
+path="res://.import/dwarf_miner.png-d1b50bff94c461ede2d4697d8e871317.stex"
 
 [deps]
 
-source_file="res://Sprites/obstacle.png"
-dest_files=[ "res://.import/obstacle.png-76ac2e54e260872af22c3d1fb36fd612.stex" ]
+source_file="res://Sprites/dwarf_miner.png"
+dest_files=[ "res://.import/dwarf_miner.png-d1b50bff94c461ede2d4697d8e871317.stex" ]
 
 [params]
 

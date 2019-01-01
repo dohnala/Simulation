@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/character.png-ee4932e4e8db66cf4fc01fdf2d78d81e.stex"
+path="res://.import/pine_tree_summer.png-506bed8f1203dfe9aefd5982bd48f971.stex"
 
 [deps]
 
-source_file="res://Sprites/character.png"
-dest_files=[ "res://.import/character.png-ee4932e4e8db66cf4fc01fdf2d78d81e.stex" ]
+source_file="res://Sprites/pine_tree_summer.png"
+dest_files=[ "res://.import/pine_tree_summer.png-506bed8f1203dfe9aefd5982bd48f971.stex" ]
 
 [params]
 

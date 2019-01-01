@@ -1,6 +1,7 @@
 extends Node
 
 export (float) var speed = 1
+export (bool) var draw_path = false
 
 signal moving_started(direction)
 signal moving_finished(direction)
@@ -26,7 +27,8 @@ func handle_move_to(target_position):
 		_move_path = _environment.get_path(_entity.position, target_position)
 		_move_path.remove(0)
 
-	_draw_move_path()
+	if draw_path:
+		_draw_move_path()
 
 func _move_to(target_position):
 	var direction = target_position - _entity.position
@@ -45,7 +47,8 @@ func _move_to(target_position):
 	_is_moving = false
 	emit_signal("moving_finished", direction)
 
-	_draw_move_path()
+	if draw_path:
+		_draw_move_path()
 
 func _draw_move_path():
 	var path = _move_path.duplicate()

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grid_lines.png-87931c97cbbfeafd9eba5c374c58ca7f.stex"
+path="res://.import/forest.png-475cfa9086a972e343869e27f7a345a2.stex"
 
 [deps]
 
-source_file="res://Sprites/grid_lines.png"
-dest_files=[ "res://.import/grid_lines.png-87931c97cbbfeafd9eba5c374c58ca7f.stex" ]
+source_file="res://Sprites/forest.png"
+dest_files=[ "res://.import/forest.png-475cfa9086a972e343869e27f7a345a2.stex" ]
 
 [params]
 
