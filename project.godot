@@ -21,7 +21,7 @@ window/size/height=640
 
 [editor_plugins]
 
-enabled=PoolStringArray( "godot-git-control.funabab" )
+enabled=PoolStringArray( "gut" )
 
 [input]
 

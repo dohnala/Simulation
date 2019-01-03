@@ -5,7 +5,7 @@
 [sub_resource type="StreamTexture" id=1]
 
 flags = 4
-load_path = "res://.import/grid_lines.png-87931c97cbbfeafd9eba5c374c58ca7f.stex"
+load_path = ""
 
 [resource]
 
