@@ -2,7 +2,7 @@
 
 [ext_resource path="res://tests/Examples/Test_Action.gd" type="Script" id=1]
 
-[node name="Character" type="Node2D" index="0"]
+[node name="Character" type="Node2D"]
 
 script = ExtResource( 1 )
 

@@ -8,7 +8,7 @@ enum State {
 
 var _name setget ,get_name
 var _currentState = INACTIVE
-var _root setget _set_root
+var _root setget _set_root, get_root
 var _parent setget set_parent, get_parent
 
 func _init(name):
@@ -19,6 +19,9 @@ func get_name():
 	
 func set_parent(parent):
 	_parent = parent
+	
+func get_root():
+	return _root
 	
 func get_parent():
 	return _parent
@@ -65,7 +68,7 @@ func _stopped(result):
 	_currentState = INACTIVE
 	
 	if _parent:
-		_parent._child_stopped(self, result)	
+		_parent._child_stopped(self, result)
 		
 func _add_timer(interval, callback):
 	if _root:

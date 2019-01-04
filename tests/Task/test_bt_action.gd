@@ -26,12 +26,15 @@ func test_action_initial_state():
 	
 func test_action_parent():
 	assert_eq(_action.get_parent(), _bt)
+	
+func test_action_root():
+	assert_eq(_action.get_root(), _bt)
 
 func test_action_is_called_on_start():
 	_bt.start()
 	
-	assert_true(_action.is_inactive())
 	assert_true(_bt.is_active())
+	assert_true(_action.is_inactive())
 	assert_eq(_counter, 1)
 	
 func test_action_is_called_every_frame():	
