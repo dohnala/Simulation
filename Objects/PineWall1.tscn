@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Objects/Object.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/367.tga" type="Texture" id=2]
+
+[node name="PineWall_Main" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="367" type="Sprite" parent="." index="0"]
+
+position = Vector2( 0, -64 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPoints" type="Node2D" parent="." index="1"]
+
+[node name="1" type="Position2D" parent="CollisionPoints" index="0"]
+
+position = Vector2( -64, 0 )
+
+[node name="2" type="Position2D" parent="CollisionPoints" index="1"]
+
+

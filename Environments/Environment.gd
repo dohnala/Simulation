@@ -38,11 +38,12 @@ func draw_path(path):
 func _get_obstacles():
 	var obstacles = []
 	
-	for object in get_children():
-		if object.has_method("get_collision_points"):
-			var collision_points = object.get_collision_points()
-			for point in collision_points:
-				obstacles.append(world_to_map(point))
+	for node in get_tree().get_nodes_in_group("objects"):
+		for object in node.get_children():
+			if object.has_method("get_collision_points"):
+				var collision_points = object.get_collision_points()
+				for point in collision_points:
+					obstacles.append(world_to_map(point))
 				
 	return obstacles
 	

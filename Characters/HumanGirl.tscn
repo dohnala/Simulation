@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Characters/HumanGirl.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/HumanGirl/53.tga" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Sprites/HumanGirl/100.tga" type="Texture" id=11]
 [ext_resource path="res://Sprites/HumanGirl/107.tga" type="Texture" id=12]
 [ext_resource path="res://Components/Movement.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Components/Hand.tscn" type="PackedScene" id=14]
 
 [sub_resource type="Animation" id=1]
 
@@ -2411,5 +2412,7 @@ blend_times = [  ]
 [node name="Controller" type="Node2D" parent="Components" index="2"]
 
 [node name="Movement" parent="Components" index="3" instance=ExtResource( 13 )]
+
+[node name="Hand" parent="Components" index="4" instance=ExtResource( 14 )]
 
 

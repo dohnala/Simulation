@@ -1,49 +1,45 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Objects/Object.gd" type="Script" id=1]
+[ext_resource path="res://Objects/Object.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/DesertObjects/693.tga" type="Texture" id=2]
 [ext_resource path="res://Sprites/DesertObjects/694.tga" type="Texture" id=3]
 [ext_resource path="res://Sprites/DesertObjects/695.tga" type="Texture" id=4]
 [ext_resource path="res://Sprites/DesertObjects/696.tga" type="Texture" id=5]
 
-[node name="JuniperTree" type="Node2D"]
+[node name="JuniperTree" index="0" instance=ExtResource( 1 )]
 
-position = Vector2( 64, 32 )
-script = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="693" type="Sprite" parent="." index="0"]
+[node name="Sprite_1" type="Sprite" parent="Sprites" index="0"]
 
 position = Vector2( 72, -268 )
 texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
 
-[node name="694" type="Sprite" parent="." index="1"]
+[node name="Sprite_2" type="Sprite" parent="Sprites" index="1"]
 
 position = Vector2( 8, -156 )
 texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
 
-[node name="695" type="Sprite" parent="." index="2"]
+[node name="Sprite_3" type="Sprite" parent="Sprites" index="2"]
 
 position = Vector2( 4, -48 )
 texture = ExtResource( 4 )
-
-[node name="696" type="Sprite" parent="." index="3"]
-
-texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionPoints" type="Node2D" parent="." index="4"]
+[node name="Sprite_4" type="Sprite" parent="Sprites" index="3"]
+
+texture = ExtResource( 5 )
+
+[node name="Shape" type="CollisionPolygon2D" parent="Area" index="0"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -128, -192, -155.133, -99.483, -73.074, -71.2283, -54.1374, 25.2584, 70.604, 23.1543, 35.4359, -11.7131, 99.4598, -80.5463, 132.824, -53.1934, 175.206, -89.5638, 80.8238, -278.028, -9.95187, -203.184, -87.8025, -230.837 )
 
 [node name="1" type="Position2D" parent="CollisionPoints" index="0"]
 
-position = Vector2( -64, -32 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( -64, 0 )
 
 [node name="2" type="Position2D" parent="CollisionPoints" index="1"]
-
-position = Vector2( 0, -32 )
 
 

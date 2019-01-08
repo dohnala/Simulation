@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Objects/Object.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/368.tga" type="Texture" id=2]
+
+[node name="PineWall_Side" instance=ExtResource( 1 )]
+
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Sprites" parent="." index="0"]
+
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="Sprites" index="0"]
+
+position = Vector2( -13, -58 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Shape" type="CollisionPolygon2D" parent="Area" index="0"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -63.6549, -126.163, -64.1252, -2.02481, 64.7154, -0.143921, 64.7154, -127.104 )
+
+[node name="CollisionPoints" parent="." index="2"]
+
+editor/display_folded = true
+
+[node name="1" type="Position2D" parent="CollisionPoints" index="0"]
+
+position = Vector2( -64, -128 )
+
+[node name="2" type="Position2D" parent="CollisionPoints" index="1"]
+
+position = Vector2( 0, -128 )
+
+[node name="3" type="Position2D" parent="CollisionPoints" index="2"]
+
+position = Vector2( -64, -64 )
+
+[node name="4" type="Position2D" parent="CollisionPoints" index="3"]
+
+position = Vector2( 0, -64 )
+
+

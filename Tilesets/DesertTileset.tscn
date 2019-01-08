@@ -118,22 +118,23 @@ texture = ExtResource( 16 )
 
 [node name="biome_2_x0_y0_square" type="Sprite" parent="." index="16"]
 
-position = Vector2( -304, 704 )
+position = Vector2( 304, 1408 )
 texture = ExtResource( 17 )
 
 [node name="biome_2_x0_y1_square" type="Sprite" parent="." index="17"]
 
-position = Vector2( -304, 832 )
+position = Vector2( 304, 1024 )
 texture = ExtResource( 18 )
+_sections_unfolded = [ "Visibility" ]
 
 [node name="biome_2_x0_y2_square" type="Sprite" parent="." index="18"]
 
-position = Vector2( -304, 960 )
+position = Vector2( 304, 1152 )
 texture = ExtResource( 19 )
 
 [node name="biome_2_x0_y3_square" type="Sprite" parent="." index="19"]
 
-position = Vector2( -304, 1088 )
+position = Vector2( 304, 1280 )
 texture = ExtResource( 20 )
 
 [node name="biome_2_x1_y0_square" type="Sprite" parent="." index="20"]
