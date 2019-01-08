@@ -1,0 +1,199 @@
+[gd_scene load_steps=33 format=2]
+
+[ext_resource path="res://Sprites/Desert/biome_2_x0_y0.tga" type="Texture" id=1]
+[ext_resource path="res://Sprites/Desert/biome_2_x0_y1.tga" type="Texture" id=2]
+[ext_resource path="res://Sprites/Desert/biome_2_x0_y2.tga" type="Texture" id=3]
+[ext_resource path="res://Sprites/Desert/biome_2_x0_y3.tga" type="Texture" id=4]
+[ext_resource path="res://Sprites/Desert/biome_2_x1_y0.tga" type="Texture" id=5]
+[ext_resource path="res://Sprites/Desert/biome_2_x1_y1.tga" type="Texture" id=6]
+[ext_resource path="res://Sprites/Desert/biome_2_x1_y2.tga" type="Texture" id=7]
+[ext_resource path="res://Sprites/Desert/biome_2_x1_y3.tga" type="Texture" id=8]
+[ext_resource path="res://Sprites/Desert/biome_2_x2_y0.tga" type="Texture" id=9]
+[ext_resource path="res://Sprites/Desert/biome_2_x2_y1.tga" type="Texture" id=10]
+[ext_resource path="res://Sprites/Desert/biome_2_x2_y2.tga" type="Texture" id=11]
+[ext_resource path="res://Sprites/Desert/biome_2_x2_y3.tga" type="Texture" id=12]
+[ext_resource path="res://Sprites/Desert/biome_2_x3_y0.tga" type="Texture" id=13]
+[ext_resource path="res://Sprites/Desert/biome_2_x3_y1.tga" type="Texture" id=14]
+[ext_resource path="res://Sprites/Desert/biome_2_x3_y2.tga" type="Texture" id=15]
+[ext_resource path="res://Sprites/Desert/biome_2_x3_y3.tga" type="Texture" id=16]
+[ext_resource path="res://Sprites/Desert/biome_2_x0_y0_square.tga" type="Texture" id=17]
+[ext_resource path="res://Sprites/Desert/biome_2_x0_y1_square.tga" type="Texture" id=18]
+[ext_resource path="res://Sprites/Desert/biome_2_x0_y2_square.tga" type="Texture" id=19]
+[ext_resource path="res://Sprites/Desert/biome_2_x0_y3_square.tga" type="Texture" id=20]
+[ext_resource path="res://Sprites/Desert/biome_2_x1_y0_square.tga" type="Texture" id=21]
+[ext_resource path="res://Sprites/Desert/biome_2_x1_y1_square.tga" type="Texture" id=22]
+[ext_resource path="res://Sprites/Desert/biome_2_x1_y2_square.tga" type="Texture" id=23]
+[ext_resource path="res://Sprites/Desert/biome_2_x1_y3_square.tga" type="Texture" id=24]
+[ext_resource path="res://Sprites/Desert/biome_2_x2_y0_square.tga" type="Texture" id=25]
+[ext_resource path="res://Sprites/Desert/biome_2_x2_y1_square.tga" type="Texture" id=26]
+[ext_resource path="res://Sprites/Desert/biome_2_x2_y2_square.tga" type="Texture" id=27]
+[ext_resource path="res://Sprites/Desert/biome_2_x2_y3_square.tga" type="Texture" id=28]
+[ext_resource path="res://Sprites/Desert/biome_2_x3_y0_square.tga" type="Texture" id=29]
+[ext_resource path="res://Sprites/Desert/biome_2_x3_y1_square.tga" type="Texture" id=30]
+[ext_resource path="res://Sprites/Desert/biome_2_x3_y2_square.tga" type="Texture" id=31]
+[ext_resource path="res://Sprites/Desert/biome_2_x3_y3_square.tga" type="Texture" id=32]
+
+[node name="Node" type="Node"]
+
+[node name="biome_2_x0_y0" type="Sprite" parent="." index="0"]
+
+position = Vector2( -304, 704 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="biome_2_x0_y1" type="Sprite" parent="." index="1"]
+
+position = Vector2( -320, 800 )
+texture = ExtResource( 2 )
+
+[node name="biome_2_x0_y2" type="Sprite" parent="." index="2"]
+
+position = Vector2( -320, 944 )
+texture = ExtResource( 3 )
+
+[node name="biome_2_x0_y3" type="Sprite" parent="." index="3"]
+
+position = Vector2( -304, 1088 )
+texture = ExtResource( 4 )
+
+[node name="biome_2_x1_y0" type="Sprite" parent="." index="4"]
+
+position = Vector2( -176, 704 )
+texture = ExtResource( 5 )
+
+[node name="biome_2_x1_y1" type="Sprite" parent="." index="5"]
+
+position = Vector2( -272, 208 )
+texture = ExtResource( 6 )
+
+[node name="biome_2_x1_y2" type="Sprite" parent="." index="6"]
+
+position = Vector2( 624, -512 )
+texture = ExtResource( 7 )
+
+[node name="biome_2_x1_y3" type="Sprite" parent="." index="7"]
+
+position = Vector2( -224, -432 )
+texture = ExtResource( 8 )
+
+[node name="biome_2_x2_y0" type="Sprite" parent="." index="8"]
+
+position = Vector2( -48, 704 )
+texture = ExtResource( 9 )
+
+[node name="biome_2_x2_y1" type="Sprite" parent="." index="9"]
+
+position = Vector2( -656, 160 )
+texture = ExtResource( 10 )
+
+[node name="biome_2_x2_y2" type="Sprite" parent="." index="10"]
+
+position = Vector2( -192, -240 )
+texture = ExtResource( 11 )
+
+[node name="biome_2_x2_y3" type="Sprite" parent="." index="11"]
+
+position = Vector2( 272, -128 )
+texture = ExtResource( 12 )
+
+[node name="biome_2_x3_y0" type="Sprite" parent="." index="12"]
+
+position = Vector2( 80, 704 )
+texture = ExtResource( 13 )
+
+[node name="biome_2_x3_y1" type="Sprite" parent="." index="13"]
+
+position = Vector2( -336, -96 )
+texture = ExtResource( 14 )
+
+[node name="biome_2_x3_y2" type="Sprite" parent="." index="14"]
+
+position = Vector2( -576, -160 )
+texture = ExtResource( 15 )
+
+[node name="biome_2_x3_y3" type="Sprite" parent="." index="15"]
+
+position = Vector2( -64, 48 )
+texture = ExtResource( 16 )
+
+[node name="biome_2_x0_y0_square" type="Sprite" parent="." index="16"]
+
+position = Vector2( -304, 704 )
+texture = ExtResource( 17 )
+
+[node name="biome_2_x0_y1_square" type="Sprite" parent="." index="17"]
+
+position = Vector2( -304, 832 )
+texture = ExtResource( 18 )
+
+[node name="biome_2_x0_y2_square" type="Sprite" parent="." index="18"]
+
+position = Vector2( -304, 960 )
+texture = ExtResource( 19 )
+
+[node name="biome_2_x0_y3_square" type="Sprite" parent="." index="19"]
+
+position = Vector2( -304, 1088 )
+texture = ExtResource( 20 )
+
+[node name="biome_2_x1_y0_square" type="Sprite" parent="." index="20"]
+
+position = Vector2( -176, 704 )
+texture = ExtResource( 21 )
+
+[node name="biome_2_x1_y1_square" type="Sprite" parent="." index="21"]
+
+position = Vector2( -176, 832 )
+texture = ExtResource( 22 )
+
+[node name="biome_2_x1_y2_square" type="Sprite" parent="." index="22"]
+
+position = Vector2( -176, 960 )
+texture = ExtResource( 23 )
+
+[node name="biome_2_x1_y3_square" type="Sprite" parent="." index="23"]
+
+position = Vector2( -176, 1088 )
+texture = ExtResource( 24 )
+
+[node name="biome_2_x2_y0_square" type="Sprite" parent="." index="24"]
+
+position = Vector2( -48, 704 )
+texture = ExtResource( 25 )
+
+[node name="biome_2_x2_y1_square" type="Sprite" parent="." index="25"]
+
+position = Vector2( -48, 832 )
+texture = ExtResource( 26 )
+
+[node name="biome_2_x2_y2_square" type="Sprite" parent="." index="26"]
+
+position = Vector2( -48, 960 )
+texture = ExtResource( 27 )
+
+[node name="biome_2_x2_y3_square" type="Sprite" parent="." index="27"]
+
+position = Vector2( -48, 1088 )
+texture = ExtResource( 28 )
+
+[node name="biome_2_x3_y0_square" type="Sprite" parent="." index="28"]
+
+position = Vector2( 80, 704 )
+texture = ExtResource( 29 )
+
+[node name="biome_2_x3_y1_square" type="Sprite" parent="." index="29"]
+
+position = Vector2( 80, 832 )
+texture = ExtResource( 30 )
+
+[node name="biome_2_x3_y2_square" type="Sprite" parent="." index="30"]
+
+position = Vector2( 80, 960 )
+texture = ExtResource( 31 )
+
+[node name="biome_2_x3_y3_square" type="Sprite" parent="." index="31"]
+
+position = Vector2( 80, 1088 )
+texture = ExtResource( 32 )
+
+

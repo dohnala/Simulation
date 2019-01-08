@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Objects/Object.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/DesertObjects/445.tga" type="Texture" id=2]
+[ext_resource path="res://Sprites/DesertObjects/448.tga" type="Texture" id=3]
+
+[node name="RabbitHole" type="Node2D"]
+
+position = Vector2( 32, 32 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="445" type="Sprite" parent="." index="0"]
+
+position = Vector2( 0, -14 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="448" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="CollisionPoints" type="Node2D" parent="." index="2"]
+
+[node name="1" type="Position2D" parent="CollisionPoints" index="0"]
+
+position = Vector2( -32, -32 )
+
+

@@ -1,0 +1,112 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Tilesets/DesertTileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Environments/Environment.gd" type="Script" id=2]
+[ext_resource path="res://Objects/JuniperTree.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Objects/RabbitHole.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Objects/TurkeyDrumstick.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Characters/HumanGirl.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Components/PlayerController.gd" type="Script" id=7]
+
+[node name="World" type="Node2D"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="Camera" type="Camera2D" parent="." index="0"]
+
+anchor_mode = 0
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+
+[node name="Ground" type="TileMap" parent="." index="1"]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 128, 128 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 0, 16, 0, 1, 20, 0, 2, 24, 0, 3, 28, 0, 4, 16, 0, 5, 20, 0, 6, 24, 0, 7, 28, 0, 8, 16, 0, 9, 20, 0, 10, 24, 0, 11, 28, 0, 12, 16, 0, 13, 20, 0, 14, 24, 0, 15, 28, 0, 65536, 17, 0, 65537, 21, 0, 65538, 25, 0, 65539, 29, 0, 65540, 17, 0, 65541, 21, 0, 65542, 25, 0, 65543, 29, 0, 65544, 17, 0, 65545, 21, 0, 65546, 25, 0, 65547, 29, 0, 65548, 17, 0, 65549, 21, 0, 65550, 25, 0, 65551, 29, 0, 131072, 18, 0, 131073, 22, 0, 131074, 26, 0, 131075, 30, 0, 131076, 18, 0, 131077, 22, 0, 131078, 26, 0, 131079, 30, 0, 131080, 18, 0, 131081, 22, 0, 131082, 26, 0, 131083, 30, 0, 131084, 18, 0, 131085, 22, 0, 131086, 26, 0, 131087, 30, 0, 196608, 19, 0, 196609, 23, 0, 196610, 27, 0, 196611, 31, 0, 196612, 19, 0, 196613, 23, 0, 196614, 27, 0, 196615, 31, 0, 196616, 19, 0, 196617, 23, 0, 196618, 27, 0, 196619, 31, 0, 196620, 19, 0, 196621, 23, 0, 196622, 27, 0, 196623, 31, 0, 262144, 16, 0, 262145, 20, 0, 262146, 24, 0, 262147, 28, 0, 262148, 16, 0, 262149, 20, 0, 262150, 24, 0, 262151, 28, 0, 262152, 16, 0, 262153, 20, 0, 262154, 24, 0, 262155, 28, 0, 262156, 16, 0, 262157, 20, 0, 262158, 24, 0, 262159, 28, 0, 327680, 17, 0, 327681, 21, 0, 327682, 25, 0, 327683, 29, 0, 327684, 17, 0, 327685, 21, 0, 327686, 25, 0, 327687, 29, 0, 327688, 17, 0, 327689, 21, 0, 327690, 25, 0, 327691, 29, 0, 327692, 17, 0, 327693, 21, 0, 327694, 25, 0, 327695, 29, 0, 393216, 18, 0, 393217, 22, 0, 393218, 26, 0, 393219, 30, 0, 393220, 18, 0, 393221, 22, 0, 393222, 26, 0, 393223, 30, 0, 393224, 18, 0, 393225, 22, 0, 393226, 26, 0, 393227, 30, 0, 393228, 18, 0, 393229, 22, 0, 393230, 26, 0, 393231, 30, 0, 458752, 19, 0, 458753, 23, 0, 458754, 27, 0, 458755, 31, 0, 458756, 19, 0, 458757, 23, 0, 458758, 27, 0, 458759, 31, 0, 458760, 19, 0, 458761, 23, 0, 458762, 27, 0, 458763, 31, 0, 458764, 19, 0, 458765, 23, 0, 458766, 27, 0, 458767, 31, 0, 524288, 16, 0, 524289, 20, 0, 524290, 24, 0, 524291, 28, 0, 524292, 16, 0, 524293, 20, 0, 524294, 24, 0, 524295, 28, 0, 524296, 16, 0, 524297, 20, 0, 524298, 24, 0, 524299, 28, 0, 524300, 16, 0, 524301, 20, 0, 524302, 24, 0, 524303, 28, 0, 589824, 17, 0, 589825, 21, 0, 589826, 25, 0, 589827, 29, 0, 589828, 17, 0, 589829, 21, 0, 589830, 25, 0, 589831, 29, 0, 589832, 17, 0, 589833, 21, 0, 589834, 25, 0, 589835, 29, 0, 589836, 17, 0, 589837, 21, 0, 589838, 25, 0, 589839, 29, 0, 655360, 18, 0, 655361, 22, 0, 655362, 26, 0, 655363, 30, 0, 655364, 18, 0, 655365, 22, 0, 655366, 26, 0, 655367, 30, 0, 655368, 18, 0, 655369, 22, 0, 655370, 26, 0, 655371, 30, 0, 655372, 18, 0, 655373, 22, 0, 655374, 26, 0, 655375, 30, 0, 720896, 19, 0, 720897, 23, 0, 720898, 27, 0, 720899, 31, 0, 720900, 19, 0, 720901, 23, 0, 720902, 27, 0, 720903, 31, 0, 720904, 19, 0, 720905, 23, 0, 720906, 27, 0, 720907, 31, 0, 720908, 19, 0, 720909, 23, 0, 720910, 27, 0, 720911, 31, 0 )
+_sections_unfolded = [ "Cell", "Z Index" ]
+
+[node name="Objects" type="TileMap" parent="." index="2"]
+
+z_index = 2
+mode = 0
+tile_set = null
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = true
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray(  )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Cell", "Z Index" ]
+grid_size = Vector2( 32, 24 )
+show_grid = true
+
+[node name="JuniperTree" parent="Objects" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 768, 544 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="RabbitHole" parent="Objects" index="1" instance=ExtResource( 4 )]
+
+position = Vector2( 160, 544 )
+_sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
+
+[node name="TurkeyDrumstick" parent="Objects" index="2" instance=ExtResource( 5 )]
+
+position = Vector2( 416, 352 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="HumanGirl" parent="Objects" index="3" instance=ExtResource( 6 )]
+
+editor/display_folded = true
+position = Vector2( 160, 224 )
+movement_speed = 0.3
+
+[node name="Controller" parent="Objects/HumanGirl/Components" index="2"]
+
+script = ExtResource( 7 )
+
+
+[editable path="Objects/HumanGirl"]

@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Objects/Object.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/DesertObjects/693.tga" type="Texture" id=2]
+[ext_resource path="res://Sprites/DesertObjects/694.tga" type="Texture" id=3]
+[ext_resource path="res://Sprites/DesertObjects/695.tga" type="Texture" id=4]
+[ext_resource path="res://Sprites/DesertObjects/696.tga" type="Texture" id=5]
+
+[node name="JuniperTree" type="Node2D"]
+
+position = Vector2( 64, 32 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="693" type="Sprite" parent="." index="0"]
+
+position = Vector2( 72, -268 )
+texture = ExtResource( 2 )
+
+[node name="694" type="Sprite" parent="." index="1"]
+
+position = Vector2( 8, -156 )
+texture = ExtResource( 3 )
+
+[node name="695" type="Sprite" parent="." index="2"]
+
+position = Vector2( 4, -48 )
+texture = ExtResource( 4 )
+
+[node name="696" type="Sprite" parent="." index="3"]
+
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionPoints" type="Node2D" parent="." index="4"]
+
+[node name="1" type="Position2D" parent="CollisionPoints" index="0"]
+
+position = Vector2( -64, -32 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="2" type="Position2D" parent="CollisionPoints" index="1"]
+
+position = Vector2( 0, -32 )
+
+
